@@ -10,5 +10,9 @@
     "angularjs",
     "seed"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
 }
