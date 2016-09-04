@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "homepage": "https://github.com/safv12/angular-basic-seed",
+  "authors": [
+    "safv12 <ing.fran12@gmail.com>"
+  ],
+  "description": "Angularjs 1.x basic structure for get started",
+  "main": "index.html",
+  "keywords": [
+    "angularjs",
+    "seed"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
