@@ -1,14 +1,15 @@
-var should = require('should');
 
 describe('Error404 module', function () {
 
-  it('Should have errorCode property', function () {
-    module('App.error404');
-    inject(function ($injector) {
-      Error404Ctrl = $injector.get('Error404Ctrl');
-    });
+  beforeEach(module('App.error404'));
 
-    console.log(Error404Ctrl);
-  });
+  it('should Error404Ctrl to be defined', inject(function($controller, $rootScope) {
+
+    scope = $rootScope.$new();
+    var Error404Ctrl = $controller('Error404Ctrl', { $scope: scope });
+    expect(Error404Ctrl).toBeDefined();
+    expect(scope.errorCode).toBe(404);
+
+  }));
 
 });
