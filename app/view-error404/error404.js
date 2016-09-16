@@ -7,6 +7,6 @@ angular.module('App.error404', ['ngRoute'])
   });
 }])
 
-.controller('Error404Ctrl', function () {
-  console.log('Page not found!');
+.controller('Error404Ctrl', function ($scope) {
+  $scope.errorCode = 404;
 });
