@@ -7,6 +7,7 @@ describe('Error404 module', function () {
 
     scope = $rootScope.$new();
     var Error404Ctrl = $controller('Error404Ctrl', { $scope: scope });
+
     expect(Error404Ctrl).toBeDefined();
     expect(scope.errorCode).toBe(404);
 
