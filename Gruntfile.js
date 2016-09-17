@@ -11,14 +11,7 @@ module.exports = function (grunt) {
           port: 8000,
           hostname: '127.0.0.1',
           base: './app',
-          keepalive: true,
-          livereload: true,
-          middleware: function (connect) {
-            return [
-              require('connect-livereload')(),
-              mountFolder(connect, 'app')
-            ];
-          }
+          keepalive: true
         }
       }
     },
