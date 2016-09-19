@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
 
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-karma');
+  // Load all grunt tasks matching the ['grunt-*', '@*/grunt-*'] patterns
+  require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
 
