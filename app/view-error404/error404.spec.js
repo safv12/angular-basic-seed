@@ -1,6 +1,9 @@
 
 describe('Error404 module', function () {
+  'use strict';
 
+  var scope;
+  var Error404Ctrl;
 
   beforeEach(function () {
     module('App.error404');

@@ -4,5 +4,7 @@ angular.module('App', [
 ])
 
 .config(['$routeProvider', function ($routeProvider) {
+  'use strict';
+
   $routeProvider.otherwise({ redirectTo: '/error404' });
 }]);
