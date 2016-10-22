@@ -1,17 +1,15 @@
-
-angular.module('App.error404', ['ngRoute'])
-
-.config(['$routeProvider', function ($routeProvider) {
+(function () {
   'use strict';
 
-  $routeProvider.when('/error404', {
-    templateUrl: 'view-error404/error404.html',
-    controller: 'Error404Ctrl'
-  });
-}])
+  angular.module('App')
+    .controller('Error404Ctrl', Error404Controller);
 
-.controller('Error404Ctrl', function ($scope) {
-  'use strict';
+  Error404Controller.$inject = [];
+  function Error404Controller() {
+    var vm = this;
+    vm.message = 'Error 404 page not found!';
+  }
 
-  $scope.errorCode = 404;
-});
+})();
+
+

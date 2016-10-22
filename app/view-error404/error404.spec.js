@@ -2,18 +2,17 @@
 describe('Error404 module', function () {
   'use strict';
 
-  var scope;
   var Error404Ctrl;
 
-  beforeEach(function () {
-    module('App.error404');
+  beforeEach(module('App'));
 
-    inject(function($controller, $rootScope) {
-      scope = $rootScope.$new();
-      Error404Ctrl = $controller('Error404Ctrl', { $scope: scope });
+  beforeEach(function () {
+    inject(function($controller) {
+      Error404Ctrl = $controller('Error404Ctrl');
     });
   });
 
+  ////////////////////////
 
   it('should Error404Ctrl to be defined', function () {
     expect(Error404Ctrl).toBeDefined();
@@ -21,7 +20,7 @@ describe('Error404 module', function () {
 
 
   it('should errorCode to be 404', function () {
-    expect(scope.errorCode).toBe(404);
+    expect(Error404Ctrl.message).toBe('Error 404 page not found!');
   });
 
 });
