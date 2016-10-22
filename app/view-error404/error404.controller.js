@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('App')
-    .controller('Error404Ctrl', Error404Controller);
+    .controller('Error404Controller', Error404Controller);
 
   Error404Controller.$inject = [];
   function Error404Controller() {
