@@ -16,7 +16,7 @@
     ];
 
     var service = {
-      new: addItem,
+      newItem: addItem,
       getItems: getItems
     };
 
